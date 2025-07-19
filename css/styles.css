@@ -1,0 +1,233 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
+* {
+  margin: 0;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+}
+
+p {
+  color: #677788;
+}
+
+/* HEADER // NAV BAR */
+
+#banner,
+.nav-bar,
+ul {
+  display: flex;
+}
+
+#banner {
+  height: 76px;
+  padding: 10px 30px;
+  justify-content: space-between;
+  background-color: #f6f8fa;
+}
+
+img.banner-logo {
+  width: fit-content;
+}
+
+.nav-bar {
+  justify-content: space-between;
+  align-items: center;
+  padding: 6px 14px;
+  gap: 30px;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  gap: 20px;
+}
+
+li a {
+  font-size: 14px;
+  color: #677788;
+  text-decoration: none;
+}
+
+li a:hover {
+  color: #2476ff;
+}
+
+button {
+  background-color: #2476ff;
+  color: #fff;
+  border: 2px solid #2476ff;
+  border-radius: 30px;
+  padding: 15px 25px;
+}
+
+button:hover {
+  background-color: #fff;
+  color: #2476ff;
+}
+
+/* HERO SECTION */
+
+h2 {
+  font-size: 40px;
+  font-weight: normal;
+}
+
+p.hero,
+a.hero-link {
+  font-size: 14px;
+  color: #677788;
+}
+
+.hero-section {
+  background-image: url("/assets/bg/background-top.svg");
+  background-size: cover;
+  padding: 40px 30px 0;
+}
+
+.hero-section,
+.hero-left,
+.hero-right,
+.hero-title,
+.hero-actions,
+button,
+div.hero-right > div {
+  display: flex;
+}
+
+.hero-left,
+.hero-title {
+  flex-direction: column;
+}
+
+.hero-left,
+.hero-right {
+  flex: 1;
+}
+
+.hero-left {
+  gap: 30px;
+  justify-content: center;
+}
+
+.hero-title {
+  gap: 11px;
+  width: 400px;
+}
+
+.hero-actions {
+  gap: 24px;
+  align-items: center;
+}
+
+button {
+  gap: 8px;
+}
+
+a.hero-link {
+  text-decoration: none;
+  font-weight: bold;
+}
+
+a.hero-link:hover {
+  color: #2476ff;
+}
+
+.hero-right {
+  height: 406px;
+}
+
+div.hero-right > div {
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  border-radius: 50%;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+}
+
+div.logo-80 {
+  width: 80px;
+  height: 80px;
+}
+
+div.logo-80 > img {
+  width: 48px;
+}
+
+div.logo-60 {
+  width: 60px;
+  height: 60px;
+}
+
+div.logo-60 > img {
+  width: 40px;
+}
+
+div.hero-right {
+  position: relative;
+}
+.logo-asana,
+.logo-atl,
+.logo-cal,
+.logo-paypal,
+.logo-weave,
+.logo-google,
+.logo-ads {
+  position: absolute;
+}
+
+.logo-google {
+  top: 10px;
+  left: 64px;
+}
+
+.logo-atl {
+  top: 10px;
+  left: 175px;
+}
+
+.logo-asana {
+  top: 10px;
+  left: 380px;
+}
+
+.logo-paypal {
+  top: 172px;
+  left: 44px;
+}
+
+.logo-weave {
+  top: 172px;
+  left: 262px;
+}
+
+.logo-ads {
+  top: 290px;
+  left: 155px;
+}
+
+.logo-cal {
+  top: 310px;
+  left: 364px;
+}
+
+/* WHY FRONT SECTION */
+
+.why-front-section,
+.why-front-title,
+.why-front-bullet-list {
+  display: flex;
+}
+
+.why-front-section,
+.why-front-title {
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.why-front-section {
+  padding: 0 30px 80px;
+  gap: 40px;
+}

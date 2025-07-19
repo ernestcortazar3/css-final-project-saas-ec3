@@ -1,5 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
 
+/* GLOBAL */
+
 * {
   margin: 0;
 }
@@ -8,8 +10,18 @@ body {
   font-family: "Inter", sans-serif;
 }
 
+h2 {
+  font-size: 40px;
+  font-weight: normal;
+}
+
+h3 {
+  font-size: 26px;
+}
+
 p {
   color: #677788;
+  font-size: 16px;
 }
 
 /* HEADER // NAV BAR */
@@ -68,11 +80,6 @@ button:hover {
 }
 
 /* HERO SECTION */
-
-h2 {
-  font-size: 40px;
-  font-weight: normal;
-}
 
 p.hero,
 a.hero-link {
@@ -216,18 +223,73 @@ div.hero-right {
 
 .why-front-section,
 .why-front-title,
-.why-front-bullet-list {
+.why-front-bullet-list,
+.bullet-container,
+.bullet-icon,
+.bullet {
   display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .why-front-section,
-.why-front-title {
+.why-front-title,
+.bullet-container {
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
 }
 
 .why-front-section {
   padding: 0 30px 80px;
   gap: 40px;
+}
+
+.why-front-title {
+  width: 600px;
+  text-align: center;
+  gap: 10px;
+}
+
+.why-front-bullet-list {
+  width: 100%;
+  padding: 0 34px;
+}
+
+.bullet-container {
+  width: 224px;
+  margin: 26px 0;
+  gap: 24px;
+}
+
+.bullet-icon {
+  width: 100%;
+  gap: 4px;
+}
+
+.left-wing,
+.right-wing {
+  width: 83px;
+  height: 1px;
+  background-color: #e6e9f2;
+}
+
+.bullet {
+  width: 50px;
+  height: 50px;
+  background-color: #ecf2ff;
+  border-radius: 50%;
+}
+
+.bullet-dot {
+  width: 6px;
+  height: 6px;
+  background-color: #0066ff;
+  border-radius: 50%;
+}
+
+.hidden {
+  background-color: transparent;
+}
+
+p.bullet-text {
+  color: #000;
 }

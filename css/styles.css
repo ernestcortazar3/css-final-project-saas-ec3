@@ -26,21 +26,28 @@ p {
 
 /* HEADER // NAV BAR */
 
-#banner,
+header,
+.banner,
 .nav-bar,
 ul {
   display: flex;
 }
 
-#banner {
+header {
   height: 76px;
   padding: 10px 30px;
-  justify-content: space-between;
+  justify-content: center;
+  align-items: center;
   background-color: #f6f8fa;
 }
 
+.banner {
+  justify-content: space-between;
+  width: 1024px;
+}
+
 img.banner-logo {
-  width: fit-content;
+  width: 150px;
 }
 
 .nav-bar {
@@ -103,6 +110,10 @@ div.hero-right > div {
   display: flex;
 }
 
+.hero-section {
+  justify-content: center;
+}
+
 .hero-left,
 .hero-title {
   flex-direction: column;
@@ -111,6 +122,7 @@ div.hero-right > div {
 .hero-left,
 .hero-right {
   flex: 1;
+  max-width: 512px;
 }
 
 .hero-left {
@@ -250,7 +262,6 @@ div.hero-right {
 }
 
 .why-front-bullet-list {
-  width: 100%;
   padding: 0 34px;
 }
 
@@ -292,4 +303,142 @@ div.hero-right {
 
 p.bullet-text {
   color: #000;
+}
+
+/* PRICING SECTION */
+
+.pricing-section,
+.pricing-title,
+.pricing-table,
+.plan,
+.plan-header,
+.plan-footer,
+.plan-features,
+.plan-features-row-one,
+.plan-features-row-two,
+.plan-feature-item,
+.cancel-anytime,
+.sketch-btn {
+  display: flex;
+}
+
+.pricing-section,
+.pricing-title,
+.plan,
+.plan-header,
+.plan-footer,
+.plan-features,
+.plan-feature-item {
+  flex-direction: column;
+}
+
+.pricing-section,
+.pricing-title,
+.pricing-table,
+.plan-features,
+.sketch-btn {
+  justify-content: center;
+  align-items: center;
+}
+
+.pricing-section {
+  padding-bottom: 120px;
+  gap: 60px;
+}
+
+.pricing-title {
+  gap: 10px;
+}
+
+.pricing-table {
+  padding: 0 30px;
+  gap: 30px;
+  max-width: 1024px;
+}
+
+.plan {
+  justify-content: center;
+  flex: 1;
+  border: 1px solid #e2e2e2;
+  height: 452px;
+  padding: 40px;
+  gap: 50px;
+}
+
+.plan:hover {
+  box-shadow: 2px 5px 12px rgba(0, 0, 0, 0.2);
+}
+
+.plan-header {
+  gap: 30px;
+}
+
+.plan-footer {
+  gap: 10px;
+}
+
+.plan-features {
+  flex: 2;
+}
+
+span.plan-cost {
+  font-size: 50px;
+  color: #000;
+}
+
+span.plan-slash,
+span.plan-period {
+  color: #677788;
+  font-size: 20px;
+}
+
+.divider {
+  width: 290px;
+  height: 2px;
+  background-color: #8d8d8d;
+}
+
+button.play-video {
+  width: 137px;
+  height: 48px;
+  font-size: 12px;
+}
+
+p.plan-disclaimer {
+  font-size: 12px;
+}
+
+.plan-features,
+.plan-features-row-one,
+.plan-features-row-two,
+.cancel-anytime {
+  gap: 10px;
+}
+
+.plan-feature-item {
+  width: 277px;
+  height: 219px;
+  padding: 20px;
+  gap: 20px;
+}
+
+.plan-feature-item > img {
+  width: 50px;
+  height: 50px;
+}
+
+h4 {
+  font-size: 18px;
+}
+p.item-text {
+  font-size: 14px;
+}
+
+.sketch-btn {
+  background-color: #01c9a7;
+  border-radius: 30px;
+  color: #fff;
+  width: 60px;
+  height: 23px;
+  font-size: 12px;
 }

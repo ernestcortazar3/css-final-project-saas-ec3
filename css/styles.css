@@ -392,7 +392,8 @@ span.plan-period {
   font-size: 20px;
 }
 
-.divider {
+.divider-plan,
+.divider-hire-us {
   width: 290px;
   height: 2px;
   background-color: #8d8d8d;
@@ -441,4 +442,92 @@ p.item-text {
   width: 60px;
   height: 23px;
   font-size: 12px;
+}
+
+/* HIRE US SECTION */
+
+.hire-us-section,
+.hire-us-left,
+.hire-us-right,
+.hire-us-header,
+.hire-us-title,
+.hire-us-footer {
+  display: flex;
+}
+
+.hire-us-left,
+.hire-us-right,
+.hire-us-header,
+.hire-us-title,
+.hire-us-footer {
+  flex-direction: column;
+  justify-content: center;
+}
+
+.hire-us-section {
+  background-color: #20335b;
+  padding: 30px;
+}
+
+.hire-us-left,
+.hire-us-right {
+  width: 512px;
+  height: 648px;
+}
+
+.hire-us-left {
+  margin-left: auto;
+  gap: 60px;
+}
+
+.hire-us-right {
+  margin-right: auto;
+}
+
+.hire-us-header {
+  flex-direction: column;
+  gap: 34px;
+  width: 370px;
+}
+
+.hire-us-title {
+  gap: 10px;
+}
+
+h3.hire-us {
+  color: #fff;
+}
+
+.divider-hire-us {
+  width: 370px;
+}
+
+p.hire-us-quote {
+  color: #fff;
+  font-style: italic;
+  line-height: 24px;
+}
+
+.hire-us-footer {
+  gap: 20px;
+}
+
+.person {
+  gap: 4px;
+}
+
+.name {
+  color: #fff;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.title {
+  font-size: 14px;
+}
+
+.person-image > img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
 }

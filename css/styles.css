@@ -6,7 +6,8 @@
   margin: 0;
 }
 
-body {
+body,
+textarea {
   font-family: "Inter", sans-serif;
 }
 
@@ -63,17 +64,20 @@ ul {
   gap: 20px;
 }
 
-li a {
+li a,
+.form-link {
   font-size: 14px;
   color: #677788;
   text-decoration: none;
 }
 
-li a:hover {
+li a:hover,
+.form-link:hover {
   color: #2476ff;
 }
 
-button {
+button,
+input.submit-form {
   background-color: #2476ff;
   color: #fff;
   border: 2px solid #2476ff;
@@ -81,7 +85,8 @@ button {
   padding: 15px 25px;
 }
 
-button:hover {
+button:hover,
+input.submit-form:hover {
   background-color: #fff;
   color: #2476ff;
 }
@@ -453,7 +458,10 @@ p.item-text {
 .hire-us-title,
 .hire-us-footer,
 .form-data,
-.form-group-half-size {
+.form-group-half-size,
+.form-group-full-size,
+.form-input,
+.form-group-checkbox {
   display: flex;
 }
 
@@ -470,7 +478,6 @@ p.item-text {
 .hire-us-section {
   background-color: #20335b;
   padding: 30px;
-  width: 1024px;
 }
 
 .hire-us-left,
@@ -489,6 +496,10 @@ p.item-text {
   background-color: #fff;
   border-radius: 10px;
   padding: 30px;
+}
+
+.hire-us-form {
+  align-items: center;
 }
 
 .hire-us-header {
@@ -557,13 +568,49 @@ h5 {
 }
 
 input,
-select {
+select,
+.form-input,
+textarea {
   width: 100%;
-  height: 44px;
+  height: 24px;
   border: 1px solid #e6e8f2;
   border-radius: 10px;
   padding: 10px;
 }
 
-input {
+.form-input {
+  justify-content: space-between;
+  align-items: center;
+  font-size: 14px;
+}
+
+textarea {
+  height: 150px;
+}
+
+#terms {
+  width: 25px;
+}
+
+.form-group-checkbox {
+  gap: 16px;
+  align-items: center;
+}
+
+label {
+  color: #828282;
+  font-size: 14px;
+}
+
+.form-group-links {
+  margin-left: 40px;
+  font-weight: bold;
+}
+
+input.submit-form {
+  width: 125px;
+  height: 45px;
+  font-size: 12px;
+  text-align: center;
+  vertical-align: middle;
 }

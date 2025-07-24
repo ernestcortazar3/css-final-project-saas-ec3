@@ -448,18 +448,21 @@ p.item-text {
 
 .hire-us-section,
 .hire-us-left,
-.hire-us-right,
+.hire-us-form,
 .hire-us-header,
 .hire-us-title,
-.hire-us-footer {
+.hire-us-footer,
+.form-data,
+.form-group-half-size {
   display: flex;
 }
 
 .hire-us-left,
-.hire-us-right,
+.hire-us-form,
 .hire-us-header,
 .hire-us-title,
-.hire-us-footer {
+.hire-us-footer,
+.form-data {
   flex-direction: column;
   justify-content: center;
 }
@@ -467,6 +470,7 @@ p.item-text {
 .hire-us-section {
   background-color: #20335b;
   padding: 30px;
+  width: 1024px;
 }
 
 .hire-us-left,
@@ -482,6 +486,9 @@ p.item-text {
 
 .hire-us-right {
   margin-right: auto;
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 30px;
 }
 
 .hire-us-header {
@@ -530,4 +537,33 @@ p.hire-us-quote {
   width: 60px;
   height: 60px;
   border-radius: 50%;
+}
+
+.hire-us-form {
+  gap: 37px;
+}
+
+.form-data,
+.form-group-half-size {
+  gap: 20px;
+}
+
+h5 {
+  font-size: 16px;
+}
+
+.form-group-half-size {
+  justify-content: center;
+}
+
+input,
+select {
+  width: 100%;
+  height: 44px;
+  border: 1px solid #e6e8f2;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+input {
 }

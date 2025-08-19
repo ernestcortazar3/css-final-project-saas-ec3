@@ -1,0 +1,32 @@
+.slide-left {
+  animation-name: slide-left;
+  animation-duration: 2.5s;
+  animation-fill-mode: backwards;
+}
+
+@keyframes slide-left {
+  from {
+    transform: translateX(300%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.slide-up {
+  animation-name: slide-up;
+  animation-duration: 2.5s;
+  animation-fill-mode: backwards;
+}
+@keyframes slide-up {
+  from {
+    transform: translateY(300%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}

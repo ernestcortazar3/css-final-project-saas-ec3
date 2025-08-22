@@ -1,0 +1,174 @@
+/* DESKTOP */
+
+@media (min-width: 1024px) {
+  div.mobile-menu {
+    display: none;
+  }
+}
+
+/* TABLET */
+
+@media (max-width: 1023px) {
+  /* TRANSITIONS and ANIMATIONS */
+
+  button,
+  input.submit-form,
+  li a,
+  .form-link,
+  .footer-link,
+  a.hero-link,
+  .plan {
+    transition-duration: 0s;
+  }
+  .slide-left,
+  .slide-up {
+    animation-duration: 0s;
+  }
+
+  /* TABLET - HEADER */
+
+  .nav-bar {
+    display: none;
+  }
+
+  .mobile-menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    font-size: 30px;
+    color: #677788;
+  }
+
+  /* TABLET - HERO SECTION */
+
+  .hero-section {
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    height: 550px;
+  }
+
+  .hero-left,
+  .hero-title {
+    align-items: center;
+    width: 100%;
+    justify-content: start;
+    max-width: 100%;
+  }
+
+  .hero-left {
+    flex: 0;
+    margin-bottom: 60px;
+  }
+
+  .hero-right {
+    flex: 0;
+    max-width: 100%;
+    width: 712px;
+    height: 309px;
+  }
+
+  .logo-google {
+    top: 0px;
+    left: 110px;
+  }
+
+  .logo-atl {
+    top: 0px;
+    left: 287px;
+  }
+
+  .logo-asana {
+    top: 0px;
+    left: 530px;
+  }
+
+  .logo-paypal {
+    top: 99px;
+    left: 112px;
+  }
+
+  .logo-weave {
+    top: 99px;
+    left: 414px;
+  }
+
+  .logo-ads {
+    top: 209px;
+    left: 230px;
+  }
+
+  .logo-cal {
+    top: 229px;
+    left: 517px;
+  }
+
+  /* TABLET - PRICING SECTION */
+
+  .pricing-section {
+    width: 100%;
+    height: 1013px;
+    padding-bottom: 60px;
+    justify-content: start;
+  }
+
+  .pricing-table {
+    flex-direction: column;
+    padding: 0 44px;
+  }
+
+  .plan,
+  .plan-header,
+  .plan-footer {
+    align-items: center;
+    width: 100%;
+  }
+
+  .divider-plan,
+  .plan-features {
+    width: 100%;
+  }
+
+  /* TABLET - HIRE US SECTION */
+
+  .hire-us-section {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .hire-us-left,
+  .hire-us-right {
+    width: 100%;
+  }
+  .hire-us-left {
+    flex-direction: row;
+    justify-content: space-between;
+    height: 240px;
+    max-width: 588px;
+    margin-left: 0;
+    padding: 40px 30px 20px;
+  }
+  .hire-us-right {
+    margin-right: 0;
+    max-width: 588px;
+    padding: 30px;
+  }
+
+  /* TABLET - FOOTER */
+
+  footer {
+    padding: 80px 30px 40px;
+    justify-content: center;
+  }
+  .footer-nav-table {
+    flex-direction: column;
+  }
+  .footer-top-row {
+    gap: 67px;
+  }
+}
+/* MOBILE */
+
+@media (max-width: 767px) {
+}

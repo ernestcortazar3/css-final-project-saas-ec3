@@ -104,6 +104,16 @@
     left: 517px;
   }
 
+  /* TABLET - WHY FRONT SECTION */
+
+  .bullet-container {
+    width: 184px;
+  }
+  .right-wing,
+  .left-wing {
+    width: 63px;
+  }
+
   /* TABLET - PRICING SECTION */
 
   .pricing-section {
@@ -122,12 +132,16 @@
   .plan-header,
   .plan-footer {
     align-items: center;
-    width: 100%;
   }
 
   .divider-plan,
   .plan-features {
     width: 100%;
+  }
+
+  .plan-features-row-one,
+  .plan-features-row-two {
+    gap: 60px;
   }
 
   /* TABLET - HIRE US SECTION */
@@ -226,7 +240,7 @@
   /* MOBILE - WHY FRONT SECTION */
 
   .why-front-title {
-    width: 100%;
+    max-width: 308px;
     padding: 0 16px;
   }
 
@@ -250,21 +264,23 @@
   /* MOBILE - PRICING SECTION */
 
   .pricing-section {
-    height: 1451px;
+    height: 1311px;
   }
 
   .pricing-table {
-    max-width: 250px;
+    max-width: 328px;
+    gap: 30px;
   }
 
   .plan-features-row-one,
   .plan-features-row-two {
     flex-direction: column;
+    gap: 10px;
   }
 
   .plan-feature-item {
     width: 328px;
-    height: 179px;
+    height: 149px;
   }
 
   /* MOBILE - HIRE US SECTION */

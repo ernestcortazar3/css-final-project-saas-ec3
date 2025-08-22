@@ -141,6 +141,7 @@
   .hire-us-right {
     width: 100%;
   }
+
   .hire-us-left {
     flex-direction: row;
     justify-content: space-between;
@@ -149,6 +150,7 @@
     margin-left: 0;
     padding: 40px 30px 20px;
   }
+
   .hire-us-right {
     margin-right: 0;
     max-width: 588px;
@@ -161,14 +163,158 @@
     padding: 80px 30px 40px;
     justify-content: center;
   }
+
   .footer-nav-table {
     flex-direction: column;
   }
+
   .footer-top-row {
     gap: 67px;
   }
 }
+
 /* MOBILE */
 
 @media (max-width: 767px) {
+  /* MOBILE - HERO SECTION */
+
+  .hero-section {
+    height: 640px;
+  }
+
+  h2.hero {
+    text-align: center;
+  }
+
+  .hero-right {
+    flex: 0;
+    max-width: 100%;
+    width: 309px;
+    height: 309px;
+  }
+
+  .logo-google {
+    left: 0;
+  }
+
+  .logo-atl {
+    left: 114px;
+  }
+
+  .logo-asana {
+    left: 248px;
+  }
+
+  .logo-paypal {
+    top: 99px;
+    left: 0;
+  }
+
+  .logo-weave {
+    left: 184px;
+  }
+
+  .logo-ads {
+    left: 106px;
+  }
+
+  .logo-cal {
+    top: 219px;
+    left: 239px;
+  }
+
+  /* MOBILE - WHY FRONT SECTION */
+
+  .why-front-title {
+    width: 100%;
+    padding: 0 16px;
+  }
+
+  .why-front-bullet-list {
+    flex-direction: column;
+    max-width: 420px;
+    gap: 17px;
+  }
+
+  .left-wing,
+  .right-wing {
+    display: none;
+  }
+
+  .bullet-container {
+    flex-direction: row;
+    width: 100%;
+    justify-content: start;
+  }
+
+  /* MOBILE - PRICING SECTION */
+
+  .pricing-section {
+    height: 1451px;
+  }
+
+  .pricing-table {
+    max-width: 250px;
+  }
+
+  .plan-features-row-one,
+  .plan-features-row-two {
+    flex-direction: column;
+  }
+
+  .plan-feature-item {
+    width: 328px;
+    height: 179px;
+  }
+
+  /* MOBILE - HIRE US SECTION */
+
+  .hire-us-left {
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+  }
+
+  .hire-us-header,
+  .hire-us-footer {
+    text-align: center;
+  }
+
+  .hire-us-right {
+    max-width: 328px;
+    min-width: 328px;
+    height: auto;
+  }
+
+  .form-group-half-size {
+    flex-direction: column;
+    width: 308px;
+  }
+
+  /* MOBILE - FOOTER */
+
+  footer,
+  .footer-top-row,
+  .footer-bottom-row {
+    flex-direction: column;
+  }
+
+  footer,
+  ul {
+    align-items: center;
+  }
+
+  footer {
+    text-align: center;
+  }
+
+  .footer-top-row,
+  .footer-bottom-row,
+  .footer-nav-table {
+    gap: 30px;
+  }
+
+  ul.column-list {
+    gap: 20px;
+  }
 }
